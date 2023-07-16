@@ -1,0 +1,11 @@
+    /// <summary>
+    ///  One of the biggest advantages of LINQ -> 
+    ///  The execution is deferred until someone is really interested in the result.
+    ///  Deferred Execution: Its like you build a pipeline on the way, like you add a number of methods to a collection for later Execution.
+    ///  And when the values start to flow in this pipeline(collection), all methods(or statements) are executed.
+    ///  The Where statement, the Select statement, Orderby, count ecc.
+    ///  LINQ aside the statements pipeline, is based on a crucial concept. The IEnumerable interface. (which has 2 members. Current and MoveNext). When you iterate in a foreach, the MoveNext is called.
+    ///  The Ienumerable deferres execution until somebody really needs the value.
+    ///  The yield keyword is used here as well
+    ///  Learn more...https://www.tutorialsteacher.com/linq
+    ///  </summary>

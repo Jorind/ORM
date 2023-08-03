@@ -26,6 +26,8 @@ namespace HelloEF.Controllers
         {
             var schoolContext = _context.Students;
 
+            //_context.Students.IgnoreQueryFilters().ToList();
+
             return View(await schoolContext.ToListAsync());
         }
 

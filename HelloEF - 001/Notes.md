@@ -4,7 +4,7 @@ This is an Example of Entity Framework in a MVC Web Application.
 It is a bit more complex application type because of the high number of files and folders.
 But don't worry, you will learn all of them in the MVC course.
 In terms of this course, the ORM, the usage is pretty much the same as in a Console Application.
-The only thing that changes is the configuration of the Context class in the Program.cs, making use of the .net core advantages.
+The only thing that changes is the configuration of the Context class in the Program.cs, taking advantage of the .net core features.
 You can take a look at how our Context class is registered as a service and later on injected into controllers directly,
 without the need to instantiate a new object from it every time.
 Everything else stays the same.

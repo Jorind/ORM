@@ -4,7 +4,7 @@ A set of simple applications to learn ORM-EF
 
 # Git commands
 
-##Adding a .gitIgnore file
+## Adding a .gitIgnore file
 open git bash in any of the repo projects that you want to add the .gitIgnore file and write touch .gitIgnore
 A .gitIgnore file is generated.
 There we can add whatever we want to ignore. 

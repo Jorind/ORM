@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33626.354
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloLinqSDA", "HelloLinqSDA.csproj", "{BF86330D-1B3C-4971-A0D6-4F073FC9DC51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloLinq", "HelloLinq.csproj", "{BF86330D-1B3C-4971-A0D6-4F073FC9DC51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

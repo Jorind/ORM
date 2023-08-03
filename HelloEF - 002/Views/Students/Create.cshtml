@@ -1,0 +1,75 @@
+﻿@using HelloEF.DomainModels
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model HelloEF.DomainModels.Student
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Student</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MiddleName" class="control-label"></label>
+                <input asp-for="MiddleName" class="form-control" />
+                <span asp-validation-for="MiddleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Age" class="control-label"></label>
+                <input asp-for="Age" class="form-control" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearsOfExperience" class="control-label"></label>
+                <input asp-for="YearsOfExperience" class="form-control" />
+                <span asp-validation-for="YearsOfExperience" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AverageSalary" class="control-label"></label>
+                <input asp-for="AverageSalary" class="form-control" />
+                <span asp-validation-for="AverageSalary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LevelOfExpertise" class="control-label"> Level Of Expertise 2</label>
+                @*<select asp-for="LevelOfExpertise" class="form-control">ViewBag.LevelsOfExpertise</select>*@
+                <select asp-for="LevelOfExpertise" class="form-control" asp-items="@Html.GetEnumSelectList<LevelOfExpertise>()"></select>
+                <span asp-validation-for="LevelOfExpertise" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DepartmentId" class="control-label"></label>
+                <select asp-for="DepartmentId" class="form-control" asp-items="ViewBag.Departments"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
